@@ -1,18 +1,15 @@
 #include <iostream>
+#include<iomanip>
 using namespace std;
 int main()
 {
-long a,b,c;
-cin>>a;
-cin>>b;
-cin>>c;
-
-if(a>=b && a>=c)
-cout<<a<<endl;
-else
-    if(b>=a && b>=c)
-    cout<<b<<endl;
-else
-    cout<<c<<endl;
-return 0;
+int k,j,i;
+for(i=1;i<10;i++)
+{
+cout<<setw(10-i);
+for(j=1;j<=i;j++)
+    cout<<j;
+for(k=1;k>=1;k--)
+cout<<k;
+}
 }
